@@ -6,7 +6,6 @@
   <title>About Us | Isaac Music School Rwanda</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* General Styles */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -19,21 +18,29 @@
     /* Navigation */
     nav {
       background-color: #222;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 15px 0;
+      width: 100%;
     }
-
-    nav a {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 16px 20px;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
       position: relative;
       transition: color 0.3s ease;
     }
-
-    nav a::after {
+    nav ul li a::after {
       content: '';
       display: block;
       width: 0;
@@ -44,13 +51,23 @@
       bottom: -5px;
       left: 0;
     }
-
-    nav a:hover {
+    nav ul li a:hover {
       color: #f8c102;
     }
-
-    nav a:hover::after {
+    nav ul li a:hover::after {
       width: 100%;
+    }
+    /* Responsive: Stack menu on small screens */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      nav ul li a {
+        text-align: left;
+        padding: 14px 16px;
+        border-bottom: 1px solid #333;
+      }
     }
 
     /* Header */
@@ -60,13 +77,11 @@
       padding: 60px 20px;
       box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
     }
-
     header h1 {
       color: #b22222;
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 1.1rem;
       color: #555;
@@ -81,32 +96,26 @@
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
     }
-
     section {
       margin-bottom: 50px;
     }
-
     h2 {
       color: #b22222;
       margin-bottom: 15px;
       font-size: 1.8rem;
     }
-
     p {
       margin-bottom: 15px;
       color: #555;
     }
-
     ul {
       list-style: disc;
       margin-left: 25px;
       color: #444;
     }
-
     ul li {
       margin-bottom: 10px;
     }
-
     ul li strong {
       color: #b22222;
     }
@@ -120,7 +129,6 @@
       border-radius: 12px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .about-image:hover {
       transform: scale(1.03);
       box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
@@ -135,12 +143,10 @@
       margin-top: 40px;
       font-size: 0.9rem;
     }
-
     footer a {
       color: #f8c102;
       text-decoration: none;
     }
-
     footer a:hover {
       text-decoration: underline;
     }
@@ -149,11 +155,13 @@
 <body>
   <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact Us</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </nav>
 
   <!-- Header -->
@@ -203,48 +211,6 @@
   <footer>
     &copy; 2025 Isaac Music School Rwanda. All rights reserved. | <a href="contact.html">Privacy Policy</a>
   </footer>
-  <footer class="site-footer">
-  <div class="footer-main">
-    <div class="footer-column">
-      <h4>About</h4>
-      <ul>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Help Center</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h4>Contact</h4>
-      <ul>
-        <li>Email: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
-        <li>Location: Your City, Country</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <ul>
-      <li><a href="#">Conditions of Use</a></li>
-      <li><a href="#">Privacy Notice</a></li>
-      <li><a href="#">Your Ads Privacy Choices</a></li>
-    </ul>
-    <p>&copy; 2025 Your Website Name. All rights reserved.</p>
-  </div>
-</footer>
+  <!-- (You can keep or remove the second footer as needed) -->
 </body>
 </html>
