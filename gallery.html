@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Gallery | Harmony Music School Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f8c102;
+    }
+
+    header {
+      text-align: center;
+      background: #fff;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      color: #b22222;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      opacity: 0;
+      transition: opacity 0.3s;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    section p {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <header>
+    <h1>Gallery</h1>
+    <p>Experience the rhythm and energy of Harmony Music School through our gallery of memorable moments.</p>
+  </header>
+
+  <main>
+    <section class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/student-performance.jpg" alt="Student Performances">
+        <div class="overlay">Student Performances</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/workshops-classes.jpg" alt="Workshops & Classes">
+        <div class="overlay">Workshops & Classes</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/cultural-events.jpg" alt="Cultural Events">
+        <div class="overlay">Cultural Events</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/community-projects.jpg" alt="Community Projects">
+        <div class="overlay">Community Projects</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/studio-sessions.jpg" alt="Studio Sessions">
+        <div class="overlay">Studio Sessions</div>
+      </div>
+    </section>
+
+    <section>
+      <p>Every photo tells a story of passion, growth, and creativity — the heartbeat of our musical community.</p>
+      <p>Visit us and be part of the harmony!</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Harmony Music School Rwanda. All rights reserved.
+  </footer>
+</body>
+</html>

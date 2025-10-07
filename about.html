@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>About Us | Harmony Music School Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #f8c102;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover {
+      color: #f8c102;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      background: #fff;
+      padding: 60px 20px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      color: #b22222;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #b22222;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 25px;
+      color: #444;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li strong {
+      color: #b22222;
+    }
+
+    /* Images */
+    .about-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-image:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #f8c102;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>About Harmony Music School Rwanda</h1>
+    <p>Empowering Rwanda through the universal language of music since 2015</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <img src="images/about-banner.jpg" alt="Harmony Music School students performing" class="about-image">
+
+    <!-- Our Story -->
+    <section>
+      <h2>Our Story</h2>
+      <p>Founded in 2015, Harmony Music School Rwanda was born out of a passion to bring high-quality music education to every corner of Rwanda. We strive to nurture talent, foster creativity, and inspire a love for music in all our students.</p>
+      <p>Our programs combine global music standards with the rich cultural heritage of Rwanda, ensuring students gain technical mastery while celebrating their roots. Through performance, collaboration, and mentorship, we empower the next generation of musicians and educators.</p>
+    </section>
+
+    <!-- Vision -->
+    <section>
+      <h2>Our Vision</h2>
+      <p>To be the leading music institution in Rwanda, recognized for excellence, innovation, and community impact. We envision a future where music education is accessible to all and plays a central role in Rwanda’s cultural growth.</p>
+    </section>
+
+    <!-- Mission & Values -->
+    <section>
+      <h2>Our Mission & Values</h2>
+      <p><strong>Mission:</strong> To provide inclusive, high-quality music education that develops artistic talent, personal growth, and community engagement.</p>
+      <ul>
+        <li><strong>Creativity:</strong> Encouraging artistic exploration and innovation.</li>
+        <li><strong>Discipline:</strong> Developing strong technical skills and performance ethics.</li>
+        <li><strong>Community:</strong> Building connections and celebrating cultural pride.</li>
+        <li><strong>Excellence:</strong> Striving for the highest standards in all our programs.</li>
+        <li><strong>Passion:</strong> Inspiring a lifelong love of music and learning.</li>
+      </ul>
+    </section>
+
+    <!-- Community Engagement -->
+    <section>
+      <h2>Community Partnerships</h2>
+      <p>We actively collaborate with schools, churches, cultural centers, and local organizations to promote music literacy and performance opportunities. Through workshops, concerts, and community events, we create platforms for young talent to thrive and communities to celebrate the power of music.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Harmony Music School Rwanda. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>

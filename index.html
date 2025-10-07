@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Home | Harmony Music School Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Carousel styles */
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: none;
+    }
+
+    .carousel img.active {
+      display: block;
+    }
+
+    /* Basic styling for layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f8c102;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    header h1 {
+      color: #b22222;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #b22222;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #b22222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta:hover {
+      background: #d63031;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <img src="images/1.jpg" class="active" alt="Harmony Music School Image 1">
+    <img src="images/2.jpg" alt="Harmony Music School Image 2">
+    <img src="images/3.jpg" alt="Harmony Music School Image 3">
+    <img src="images/4.jpg" alt="Harmony Music School Image 4">
+    <img src="images/5.jpg" alt="Harmony Music School Image 5">
+  </div>
+
+  <header>
+    <h1>Welcome to Harmony Music School Rwanda</h1>
+    <p>Discover your musical voice with Harmony Music School — where passion meets excellence. Located in the heart of Kigali, we nurture students of all ages and skill levels to explore, create, and perform music with confidence.</p>
+  </header>
+
+  <main>
+    <section>
+      <p>Whether you’re picking up an instrument for the first time or perfecting your performance technique, our experienced instructors guide you every step of the way through personalized lessons, modern facilities, and a supportive learning environment.</p>
+      <p>Join a growing community of musicians who are shaping Rwanda’s vibrant music scene.</p>
+      <h2>Inspire. Learn. Perform.</h2>
+    </section>
+
+    <section>
+      <h2>Featured Programs</h2>
+      <ul>
+        <li>Piano & Keyboard Training</li>
+        <li>Guitar & Bass Lessons</li>
+        <li>Voice & Vocal Coaching</li>
+        <li>Drums & Percussion</li>
+        <li>Traditional Rwandan Music & Dance</li>
+        <li>Music Theory & Composition</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Start Your Journey Today</h2>
+      <p>Enroll now and make your passion for music your greatest skill.</p>
+      <a class="cta" href="contact.html">Enroll Now</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Harmony Music School Rwanda. All rights reserved.
+  </footer>
+
+  <script>
+    // Simple image carousel logic
+    let index = 0;
+    const images = document.querySelectorAll('.carousel img');
+
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 4000); // change every 4 seconds
+  </script>
+</body>
+</html>
